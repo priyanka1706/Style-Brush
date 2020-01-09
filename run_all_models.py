@@ -1,5 +1,6 @@
 import os
 import path 
+import sys
 
 def run_all(content_img, folder):
 	#content_img='orig3.jpg'
