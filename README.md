@@ -1,12 +1,12 @@
 # Style Brush
-Style Brush is a complete application built on Python that gives users freedom to choose how to style their images. The idea is to build
+Style Brush is an application built on Python that gives users freedom to choose how to style their images. The idea is to build
 an application that allows users to style their images as per their wish and finally receive a custom painting to capture the moment instantly, similar to a photo-booth but with more user input.
 
 ## Overview
 The users can capture an image at the same moment, or instead upload a previously chosen image. The application then runs on eight different style transfer models corresponding to eight painting styles. The eight stylized images are then presented to the user as choices on an interactive user interface, where the user can draw on their image to choose an area to be styled. Once the user makes a selection, a mask is generated for the area chosen, blurred slightly so that the merging between two styles isn’t too sharp and then the chose n style is applied. The user then has the option to go back and continue styling other parts of the image with some of the other styles as per their wish. If not, they can exit the process, upon which the final image is passed through the super resolution model, which outputs a final up-scaled high resolution image that is ready for the user to print.
 
 ![alt text](https://github.com/priyanka1706/Style-Brush/blob/master/Working.jpg)
-Complete flow of processes
+<p align="center"> Complete flow of processes </p>
 
 ## Modules
 ### Style Transfer
@@ -20,7 +20,7 @@ After comparing the results for quality, detail and speed amongst multiple super
 by Residual-in-Residual Dense Blocks (RRDBs), to replace the discriminator in the SRGAN with a Relativistic Discriminator, and to use perceptual loss to get more realistic images. 
 
 ![alt text](https://github.com/priyanka1706/Style-Brush/blob/master/UI.jpg)
-Complete flow of processes
+<p align="center"> User Interface </p>
 
 ## References
 -  Johnson, Justin, Alexandre Alahi, and Li Fei-Fei. "Perceptual losses for real-time style transfer and
