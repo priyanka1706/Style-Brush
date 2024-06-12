@@ -10,7 +10,7 @@ The users can capture an image at the same moment, or instead upload a previousl
 
 ## Modules
 ### Style Transfer
-We use the approach by Johnson et al. to produce multiple styled output images for an input image as it can produce 8 images in less than 5 seconds and the images are visually appealing. Further Ulyanov et al. introduced Instance Normalization which significantly improves image quality. Hence, we combine these approaches to do style transfer in our application
+We use the approach by Johnson et al. to produce multiple stylized output images for an input image as it can produce 8 images in less than 5 seconds and the images are visually appealing.
 
 ### Interactive Interface
 The scribble user interface is built using Tkinter on Python, to give the user freedom to choose as many styles as they like on varying regions, how many ever times they would prefer. The region coordinates are passed on to build a mask that is blurred using a 25x25 Gaussian blur, so that individual styles merge together smoothly. The mask is then used to implement the style on the previous image to present to the user. This gives a final amalgamation of styles that looks pleasing to the eye. 
